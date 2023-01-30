@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const cx = cn.bind(styles);
 
-export const Post = ({ title, body, deletePost }) => {
+export const Photo = ({ title, url, deletePhoto }) => {
     const [isColorChanged, setIsColorChanged] = useState(false);
     const onRecolorClick = useCallback(
         () => setIsColorChanged(!isColorChanged),
@@ -12,24 +12,21 @@ export const Post = ({ title, body, deletePost }) => {
     );
 
     return (
-        //<div className={isColorChanged ? "post bottonRecolorActive" : "post postColor"}>
         <div
-            className={cx("post", {
+            className={cx("photo", {
                 bottonRecolorActive: isColorChanged,
-                postColor: !isColorChanged
+                photoColor: !isColorChanged,
             })}
         >
-            <div className="post sectionName niga">Title:</div>
-            <div className="post title">{title}</div>
-            <div className="post sectionName">Post:</div>
-            <div className="post body">{body}</div>
-            <div className="post buttons">
-                <button onClick={deletePost} className="post buttons delete">
+            <div className="photo img">{<img src={url} width="300px" />}</div>
+            <div className="photo title">{title}</div>
+            <div className="photo buttons">
+                <button onClick={deletePhoto} className="photo buttons delete">
                     Delete
                 </button>
                 <button
                     onClick={onRecolorClick}
-                    className="post buttons recolor"
+                    className="photo buttons recolor"
                 >
                     Recolor
                 </button>

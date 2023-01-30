@@ -1,0 +1,9 @@
+.photoList{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    align-content: center;
+    justify-content: center;
+}

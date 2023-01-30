@@ -1,6 +1,5 @@
 .post{
     display: flex;
-    background-color: black;
     color: #fff;
     min-height: 90px;
     text-align: center;
@@ -8,6 +7,14 @@
     margin-right: auto;
     align-items: center;
     justify-content: center
+}
+
+.postColor{
+    background-color: black;
+}
+
+.bottonRecolorActive{
+    background-color: #03f;
 }
 .sectionName{
     font-size: 20px;
@@ -23,6 +30,19 @@
     width: 20%;
 }
 .body{
- width: 60%;
+ width: 55%;
+ margin-right: 10px;
 }
-
+.buttons{
+    min-width: 90px;
+    min-height: 40px;
+    max-height: 90px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 5%;
+    margin-right: 10px;
+}
+.buttons button{
+    background-color: #642e15;
+    margin-right: 0;
+}
