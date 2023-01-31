@@ -1,5 +1,4 @@
 .post{
-    display: flex;
     color: #fff;
     min-height: 90px;
     text-align: center;
@@ -8,7 +7,6 @@
     align-items: center;
     justify-content: center
 }
-
 .postColor{
     background-color: black;
 }
