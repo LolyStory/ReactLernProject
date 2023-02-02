@@ -3,6 +3,7 @@ import { Footer } from "./components/footer";
 import { PostsList } from "./conteiners/PostsList";
 import { PhotosList } from "./conteiners/PhotosList";
 import React, { useState } from "react";
+
 function App() {
     const [isPhotosMode, setIsPhotosMode] = useState(false);
 

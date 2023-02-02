@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useCallback } from "react";
 import { Post } from "../post/Post";
 import "./styles.css";
@@ -25,3 +26,4 @@ export const PostsList = ({ posts, setPosts }) => {
         />
     ));
 };
+

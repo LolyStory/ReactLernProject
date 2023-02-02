@@ -12,6 +12,5 @@ export const PostsList = () => {
         };
         fetchData();
     }, []);
-
     return <PostsListComponent posts={posts} setPosts={setPosts} />;
 };
