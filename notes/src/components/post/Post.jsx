@@ -12,11 +12,10 @@ export const Post = ({ title, body, deletePost }) => {
     );
 
     return (
-        //<div className={isColorChanged ? "post bottonRecolorActive" : "post postColor"}>
         <div
             className={cx("post", {
                 bottonRecolorActive: isColorChanged,
-                postColor: !isColorChanged
+                postColor: !isColorChanged,
             })}
         >
             <div className="post sectionName niga">Title:</div>
