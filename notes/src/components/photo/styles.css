@@ -1,0 +1,35 @@
+.photo{
+    display: flex;
+    text-align: center;
+    color: #fff;
+    height: 450px;
+    width: 300px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;    
+    margin: auto;
+    align-items: flex-start;
+}
+.photoColor{
+    background-color: black;
+}
+.photo.title{
+    padding: 5px;
+    height: 40px;
+    justify-content: center;
+}
+.photo.img{
+   height: auto;
+}
+.photo.buttons{
+    font-size: 100%;
+    flex-direction: column;
+    height: 50px;
+    width: 100px;
+    margin: auto;
+}
+.photo.buttons button{
+    background-color: #642e15;
+    padding-top: 14px;
+    margin: auto;
+}

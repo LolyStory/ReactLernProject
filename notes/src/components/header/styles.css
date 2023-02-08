@@ -1,6 +1,25 @@
 .header{
+    min-height: 3em;
     background-color: #000;
     font-size: 24px;
     color: #fff;
+    display: flex;
     flex: 1 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.title{
+    margin-left: 1em;
+    justify-content: start;
+}
+.menuButton{
+    background-color: #642e15;
+    min-height: 2.8em;
+    max-width: 240px;
+    min-width: 120px;
+    margin-right: auto;
+    vertical-align: middle;
+    flex-wrap: wrap;
+
 }
