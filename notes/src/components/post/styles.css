@@ -11,7 +11,6 @@
 .postColor{
     background-color: black;
 }
-
 .bottonRecolorActive{
     background-color: #03f;
 }
@@ -34,9 +33,7 @@
 }
 .buttons{
     min-width: 90px;
-    min-height: 40px;
-    max-height: 90px;
-    flex-wrap: wrap;
+    min-height: 35px;
     flex-direction: column;
     width: 5%;
     margin-right: 10px;

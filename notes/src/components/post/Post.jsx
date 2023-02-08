@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const cx = cn.bind(styles);
 
-export const Post = ({ title, body, deletePost }) => {
+export const Post = ({ title, body, deletePost, onSelectPost }) => {
     const [isColorChanged, setIsColorChanged] = useState(false);
     const onRecolorClick = useCallback(
         () => setIsColorChanged(!isColorChanged),
@@ -31,6 +31,12 @@ export const Post = ({ title, body, deletePost }) => {
                     className="post buttons recolor"
                 >
                     Recolor
+                </button>
+                <button
+                    onClick={onSelectPost}
+                    className="post buttons onSelectPost"
+                >
+                    Select
                 </button>
             </div>
         </div>

@@ -14,6 +14,7 @@
     background-color: black;
 }
 .photo.title{
+    padding: 5px;
     height: 40px;
     justify-content: center;
 }
@@ -21,13 +22,14 @@
    height: auto;
 }
 .photo.buttons{
+    font-size: 100%;
     flex-direction: column;
-    height: 70px;
-    width: 150px;
+    height: 50px;
+    width: 100px;
     margin: auto;
 }
 .photo.buttons button{
     background-color: #642e15;
-    padding-top: 26px;
+    padding-top: 14px;
     margin: auto;
 }

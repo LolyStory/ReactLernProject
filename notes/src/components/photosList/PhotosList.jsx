@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { Photo } from "../photo/Photo";
 import "./styles.css";
 
-export const PhotosList = ({ photos, setPhotos }) => {
+export const PhotosList = ({ photos, setPhotos, onSelectPhoto }) => {
     const trueDeletePhoto = useCallback(
         (id) => {
             const newPhotos = photos.filter((post) => post.id !== id);
@@ -18,13 +18,14 @@ export const PhotosList = ({ photos, setPhotos }) => {
 
     return (
         <div className="photoList">
-            {photos.map(({title, url, id}) => (
-            <Photo
-                title={title}
-                url={url}
-                deletePhoto={() => trueDeletePhoto(id)}
-                key={id}
-            />
+            {photos.map(({ title, url, id }) => (
+                <Photo
+                    title={title}
+                    url={url}
+                    onSelectPhoto={() => onSelectPhoto(id)}
+                    deletePhoto={() => trueDeletePhoto(id)}
+                    key={id}
+                />
             ))}
         </div>
     );
